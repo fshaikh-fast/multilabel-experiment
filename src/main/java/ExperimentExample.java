@@ -1,6 +1,7 @@
 
 import meka.classifiers.multilabel.BR;
 import meka.classifiers.multilabel.CC;
+import meka.classifiers.multilabel.MULAN;
 import meka.classifiers.multilabel.MultiLabelClassifier;
 import meka.core.OptionUtils;
 import meka.events.LogEvent;
@@ -40,8 +41,8 @@ public class ExperimentExample {
         Experiment exp = new DefaultExperiment();
         // classifiers
         exp.setClassifiers(new MultiLabelClassifier[]{
-                new BR(),
-                new CC()
+
+                new meka.classifiers.multilabel.MULAN()
         });
         // datasets
         List<File> files = new ArrayList<File>();
@@ -63,6 +64,7 @@ public class ExperimentExample {
         exp.setStatisticsHandler(sh);
         // evaluation
         RepeatedRuns eval = new RepeatedRuns();
+        eval.setUpperRuns(1);
         eval.setEvaluator(new CrossValidation());
         exp.setEvaluator(eval);
         // stage

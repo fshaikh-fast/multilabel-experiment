@@ -1,4 +1,4 @@
-@relation 'MultiLabelData: -C 14'
+@relation 'MultiLabelData: -C -14'
 
 @attribute Att1 numeric
 @attribute Att2 numeric

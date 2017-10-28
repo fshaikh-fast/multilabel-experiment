@@ -1,4 +1,4 @@
-@relation 'bibsonomy_bibtex -C 159'
+@relation 'bibsonomy_bibtex: -C -159'
 
 @attribute 0 {0,1}
 @attribute 000 {0,1}

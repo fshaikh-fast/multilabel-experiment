@@ -1,4 +1,4 @@
-@relation 'CAL500: -C 174'
+@relation 'CAL500: -C -174'
 
 @attribute Mean_Acc1000_Mean_Mem40_ZeroCrossings_HopSize512_WinSize512_AudioCh0 numeric
 @attribute Mean_Acc1000_Mean_Mem40_Centroid_Power_powerFFT_WinHamming_HopSize512_WinSize512_AudioCh0 numeric
